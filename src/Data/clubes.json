@@ -2,7 +2,7 @@
   {
     "nombre": "Pucaru Stade Gaulois",
     "departamento": "Montevideo",
-    "barrio":"Parque Batlle",
+    "barrio": "Parque Batlle",
     "direccion": "Av. Dr. Américo Ricaldoni 2875",
     "telefono": "099075203 Coordinación ",
     "contacto": "https://wa.me/59899075203",
@@ -12,29 +12,28 @@
       "\nJuveniles Mixto",
       "\nEscuelita Mixto"
     ],
-    "horarios":[
-    "\nPrincipiantes y Masculino martes 20 a 21 viernes 20:00 a 22:00",
-    "\nEscuelita martes y jueves 18:00 a 19:00",
-    "\nJuveniles martes y jueves 18:00 a 19:00",
-    "\nMayores - lunes, miércoles y jueves 20:00 a 22:00 cancha Prado"
+    "horarios": [
+      "Principiantes y Masculino Martes 20:00 a 21:00 Viernes 20:00 a 22:00",
+      "Escuelita Martes y Jueves 18:00 a 19:00",
+      "Juveniles Martes y Jueves 18:00 a 19:00",
+      "Mayores Femenino - Lunes, Miércoles y Jueves 20:00 a 22:00 cancha Prado"
     ],
     "redes_sociales": {
       "facebook": "https://www.facebook.com/psgruby",
       "instagram": "https://instagram.com/psg.hockey"
     },
     "coordenadas": {
-      "lat": -34.89749005153328, 
+      "lat": -34.89749005153328,
       "lng": -56.15279384357287
     },
     "imagen": "/logos/psg.png"
   },
-
   {
     "nombre": "Paysandú Golf Club",
     "departamento": "Paysandú",
-    "barrio":"",
+    "barrio": "",
     "direccion": "Ruta 90",
-    "telefono": "099464365 Coordinacion",
+    "telefono": "099464365 Coordinación",
     "contacto": "https://wa.me/59899464365",
     "categorias": [
       "\nMasculino",
@@ -42,15 +41,15 @@
       "\nJuveniles Mixto hasta s14",
       "\nEscuelita Mixto"
     ],
-    "horarios":[
-    "\nLunes a viernes de 17:00 a 21:30"
+    "horarios": [
+      "Lunes a Viernes de 17:00 a 21:30"
     ],
     "redes_sociales": {
       "facebook": "https://www.facebook.com/PGC1927",
       "instagram": "https://instagram.com/pgc_trebolhockey_paysandu"
     },
     "coordenadas": {
-      "lat": -32.32631435609348,  
+      "lat": -32.32631435609348,
       "lng": -58.03287649390022
     },
     "imagen": "/logos/trebol.png"
@@ -58,29 +57,60 @@
   {
     "nombre": "Seminario",
     "departamento": "Montevideo",
-    "barrio":"Carrasco",
+    "barrio": "Carrasco",
     "direccion": "Camino José Strassener 2960",
-    "telefono": " 099443755 Coordinación ",
+    "telefono": "099443755 Coordinación ",
     "contacto": "https://wa.me/59899443755",
     "categorias": [
       "\nMasculino",
       "\nFemenino"
     ],
-    "horarios":[
-    "\nMasculino Mayores Martes y Jueves 19:30 a 22:00",
-    "\nMasculino formativas Miércoles 18:30 a 19:30",
-    "\nFemenino Mayores Martes y Jueves 19:30 a 22:00 miércoles de 19:30 a 21:00",
-    "\nFemenino formativas solo para alumnas del colegio",
-    "\nFemenino Intermedias de 20:30 a 22:30"
+    "horarios": [
+      "Masculino:",
+      "Mayores Martes y Jueves 19:30 a 22:00",
+      "Formativas Miércoles 18:30 a 19:30",
+      "Femenino",
+      "Mayores Martes y Jueves 19:30 a 22:00 Miércoles de 19:30 a 21:00",
+      "Formativas solo para alumnas del colegio",
+      "Intermedias de 20:30 a 22:30"
     ],
     "redes_sociales": {
       "facebook": "https://www.facebook.com/clubseminario",
       "instagram": "https://instagram.com/clubseminariohockey"
     },
     "coordenadas": {
-      "lat": -34.86515805884425,  
-      "lng": -56.08076496831311
+      "lat": -34.86637243313825,
+      "lng": -56.081113904692685
     },
     "imagen": "/logos/seminario.png"
+  },
+  {
+    "nombre": "Northfield",
+    "departamento": "Montevideo",
+    "barrio": "Colon",
+    "direccion": "Cno. Carlos A. López 7626",
+    "telefono": "098692209 Coordinación",
+    "contacto": "https://wa.me/59898692209",
+    "categorias": [
+      "\nMayores Mixto",
+      "\nJuveniles Mixto ",
+      "\nEscuelita Mixto"
+    ],
+    "horarios": [
+      "Menores:",
+      "Martes y Jueves 18:00 a 20:00",
+      "Lunes y Miércoles 17:30 a 19:00 cancha Celeste",
+      "Mayores:",
+      "Martes y Jueves 20:00 a 22:00"
+    ],
+    "redes_sociales": {
+      "facebook": "https://www.facebook.com/Northfield.uy",
+      "instagram": "https://instagram.com/northfield.uy"
+    },
+    "coordenadas": {
+      "lat": -34.79585075430562,
+      "lng": -56.2142210453521
+    },
+    "imagen": "/logos/nf.png"
   }
 ]
