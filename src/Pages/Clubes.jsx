@@ -1,4 +1,4 @@
-import clubes from "../data/clubes.json";
+import clubes from "../Data/clubes.json";
 import ClubCard from "../Components/ClubCard";
 
 function Clubes() {
