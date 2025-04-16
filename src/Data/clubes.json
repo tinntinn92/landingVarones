@@ -1,7 +1,8 @@
 [
   {
     "nombre": "Pucaru Stade Gaulois",
-    "departamento": "Montevideo, Parque Batlle",
+    "departamento": "Montevideo",
+    "barrio":"Parque Batlle",
     "direccion": "Av. Dr. Américo Ricaldoni 2875",
     "telefono": "099075203 Coordinación ",
     "contacto": "https://wa.me/59899075203",
@@ -31,6 +32,7 @@
   {
     "nombre": "Paysandú Golf Club",
     "departamento": "Paysandú",
+    "barrio":"",
     "direccion": "Ruta 90",
     "telefono": "099464365 Coordinacion",
     "contacto": "https://wa.me/59899464365",
@@ -55,7 +57,8 @@
   },
   {
     "nombre": "Seminario",
-    "departamento": "Montevideo, Carrasco",
+    "departamento": "Montevideo",
+    "barrio":"Carrasco",
     "direccion": "Camino José Strassener 2960",
     "telefono": " 099443755 Coordinación ",
     "contacto": "https://wa.me/59899443755",

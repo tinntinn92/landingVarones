@@ -23,7 +23,7 @@ function ClubCard({ club }) {
         )}
         <h2 className="text-xl font-semibold text-white">{club.nombre}</h2>
         <p className="mt-2">
-          📍 {club.direccion}, {club.departamento}
+          📍 {club.direccion}, {club.departamento}, {club.barrio}
         </p>
         <p className="mt-2 text-sm whitespace-pre-line"> Categorías: {club.categorias.join("")}</p>
         <p className="mt-2 text-sm whitespace-pre-line">🕒 Horarios: {club.horarios.join("")}</p>
