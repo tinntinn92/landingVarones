@@ -8,7 +8,7 @@ function Clubes() {
   const [departamentoSeleccionado, setDepartamentoSeleccionado] = useState("");
 
   // Obtener lista única de departamentos
-  const departamentos = [...new Set(clubesData.map(c => c.departamento))];
+  const departamentos = [...new Set(clubesData.map((c) => c.departamento))];
 
   // Filtrar por departamento
   const filtrarPorDepartamento = (departamento) => {
@@ -26,13 +26,24 @@ function Clubes() {
     setDepartamentoSeleccionado("");
   };
 
+  const [isTop, setIsTop] = useState(true);
+
+  // Manejar el evento de scroll
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsTop(false);  // Si el usuario hizo scroll, ocultamos el logo
+    } else {
+      setIsTop(true);  // Si está en la parte superior, mostramos el logo
+    }
+  };
+
   return (
     <div className="max-w-screen-xl mx-auto p-6">
       {/* Logo */}
       <img
         src={"/logos/cima.png"}
         alt={`Logo`}
-        className="fixed top-4 right-12 w-48 object-contain z-50"
+        className={`block mx-auto w-48 object-contain z-50 ${isTop ? '' : 'opacity-0'} transition-opacity duration-300`}
       />
 
       <h1 className="text-2xl font-bold mb-6 text-center text-gray-900 dark:text-white">
