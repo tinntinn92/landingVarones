@@ -31,28 +31,10 @@ function Clubes() {
     setDepartamentoSeleccionado("");
   };
 
-  const [isTop, setIsTop] = useState(true);
-
-  // Manejar el evento de scroll
-  const handleScroll = () => {
-    if (window.scrollY > 0) {
-      setIsTop(false);  // Si el usuario hizo scroll, ocultamos el logo
-    } else {
-      setIsTop(true);  // Si está en la parte superior, mostramos el logo
-    }
-  };
-
   useEffect(() => {
     // Inicializar los clubes ordenados alfabéticamente
     setClubes(ordenarAlfabeticamente(clubesData));
 
-    // Agregar event listener de scroll
-    window.addEventListener("scroll", handleScroll);
-
-    // Limpiar el event listener cuando el componente se desmonte
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
 
   return (
@@ -60,8 +42,8 @@ function Clubes() {
       {/* Logo */}
       <img
         src={"/logos/cima.png"}
-        alt={`Logo`}
-        className={`block mx-auto w-48 object-contain z-50 ${isTop ? '' : 'opacity-0'} transition-opacity duration-0`}
+        alt="Logo"
+        className="block mx-auto w-48 object-contain mb-4"
       />
 
       <h1 className="text-2xl font-bold mb-6 text-center text-gray-900 dark:text-white">
