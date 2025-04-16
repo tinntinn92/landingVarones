@@ -7,7 +7,7 @@ function Clubes() {
       
       <h1 className="text-2xl font-bold mb-4 text-center">Clubes de hockey sobre césped en Uruguay</h1>
       <img
-          src={"src/assets/logos/cima.png"}
+          src={"public/logos/cima.png"}
           alt={`Logo`}
           className="fixed top-4 right-12 w-48 object-contain z-50 "
         />
