@@ -1,28 +1,33 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import clubesData from "../Data/clubes.json";
 import ClubCard from "../Components/ClubCard";
 
 function Clubes() {
-  const [clubes, setClubes] = useState(clubesData);
+  const [clubes, setClubes] = useState([]);
   const [modalAbierto, setModalAbierto] = useState(false);
   const [departamentoSeleccionado, setDepartamentoSeleccionado] = useState("");
 
   // Obtener lista única de departamentos
   const departamentos = [...new Set(clubesData.map((c) => c.departamento))];
 
+  // Función para ordenar los clubes alfabéticamente
+  const ordenarAlfabeticamente = (data) => {
+    return data.sort((a, b) => a.nombre.localeCompare(b.nombre));
+  };
+
   // Filtrar por departamento
   const filtrarPorDepartamento = (departamento) => {
     const filtrados = clubesData.filter(
       (club) => club.departamento === departamento
     );
-    setClubes(filtrados);
+    setClubes(ordenarAlfabeticamente(filtrados));
     setDepartamentoSeleccionado(departamento);
     setModalAbierto(false);
   };
 
   // Limpiar filtro
   const limpiarFiltro = () => {
-    setClubes(clubesData);
+    setClubes(ordenarAlfabeticamente(clubesData));
     setDepartamentoSeleccionado("");
   };
 
@@ -36,6 +41,19 @@ function Clubes() {
       setIsTop(true);  // Si está en la parte superior, mostramos el logo
     }
   };
+
+  useEffect(() => {
+    // Inicializar los clubes ordenados alfabéticamente
+    setClubes(ordenarAlfabeticamente(clubesData));
+
+    // Agregar event listener de scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Limpiar el event listener cuando el componente se desmonte
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="max-w-screen-xl mx-auto p-6">
