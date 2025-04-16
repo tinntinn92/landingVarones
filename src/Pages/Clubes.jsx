@@ -61,7 +61,7 @@ function Clubes() {
       <img
         src={"/logos/cima.png"}
         alt={`Logo`}
-        className={`block mx-auto w-48 object-contain z-50 ${isTop ? '' : 'opacity-0'} transition-opacity duration-300`}
+        className={`block mx-auto w-48 object-contain z-50 ${isTop ? '' : 'opacity-0'} transition-opacity duration-0`}
       />
 
       <h1 className="text-2xl font-bold mb-6 text-center text-gray-900 dark:text-white">
