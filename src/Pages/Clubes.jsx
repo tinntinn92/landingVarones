@@ -10,7 +10,7 @@ function Clubes() {
       <img
         src={"/logos/cima.png"}
         alt={`Logo`}
-        className="fixed top-4 right-12 w-48 object-contain z-50 hidden lg:block"  // Se oculta en pantallas pequeñas
+        className="fixed top-4 right-4 w-48 object-contain z-50 hidden lg:block"  // Se oculta en pantallas pequeñas
       />
 
       {/* Grid con 2 columnas para pantallas medianas y 3 para pantallas grandes */}
