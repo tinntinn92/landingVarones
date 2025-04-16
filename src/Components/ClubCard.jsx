@@ -13,9 +13,7 @@ function ClubCard({ club }) {
   return (
     <div className="bg-cyan-900 shadow-lg rounded-xl p-6 w-full mx-auto">
       {/* Contenedor para centrar el texto y las redes sociales */}
-      <div className="flex flex-col items-center text-center  text-white">
-        {" "}
-        {/* Centrado vertical y horizontal */}
+      <div className="flex flex-col items-center text-center text-white">
         {club.imagen && (
           <img
             src={club.imagen}
@@ -24,17 +22,13 @@ function ClubCard({ club }) {
           />
         )}
         <h2 className="text-xl font-semibold text-white">{club.nombre}</h2>
-        <p className="text-shadow-white mt-2">
+        <p className="mt-2">
           📍 {club.direccion}, {club.departamento}
         </p>
-        <p className="">✉️ {club.contacto}</p>
-        <p className="mt-2 text-sm ">
-          🏑 Categorías: {club.categorias.join(", ")}
-        </p>
-        <p className="mt-2 text-sm ">🕒 Horarios: {club.horarios}</p>
-        <p className="mt-2 text-sm">
-          🏢 Instalaciones: {club.instalaciones.join(", ")}
-        </p>
+        <p className="mt-2 text-sm whitespace-pre-line"> Categorías: {club.categorias.join("")}</p>
+        <p className="mt-2 text-sm whitespace-pre-line">🕒 Horarios: {club.horarios.join("")}</p>
+        <p className="mt-2">✉️ {club.telefono}</p>
+
         {/* Iconos de redes sociales */}
         <div className="mt-4 flex space-x-6">
           {club.redes_sociales.facebook && (
@@ -57,16 +51,14 @@ function ClubCard({ club }) {
               <FaInstagram size={30} />
             </a>
           )}
-
           <a
             href={club.contacto}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap- text-white rounded-lg dark:text-white  dark:hover:text-pink-800 transition duration-300"
+            className="flex items-center text-white rounded-lg dark:text-white dark:hover:text-pink-800 transition duration-300"
           >
             <FaWhatsapp size={30} />
           </a>
-
           <a
             href={`https://www.google.com/maps/search/?api=1&query=${club.coordenadas.lat},${club.coordenadas.lng}`}
             target="_blank"
@@ -106,3 +98,4 @@ function ClubCard({ club }) {
 }
 
 export default ClubCard;
+
