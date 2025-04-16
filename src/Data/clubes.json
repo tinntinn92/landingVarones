@@ -13,10 +13,15 @@
       "\nEscuelita Mixto"
     ],
     "horarios": [
-      "\nPrincipiantes y Masculino Martes 20:00 a 21:00 Viernes 20:00 a 22:00",
-      "\nEscuelita Martes y Jueves 18:00 a 19:00",
-      "\nJuveniles Martes y Jueves 18:00 a 19:00",
-      "\nMayores Femenino - Lunes, Miércoles y Jueves 20:00 a 22:00 cancha Prado"
+      "\nMasculino y Principiantes:",
+      "\nMartes 20:00 a 21:00",
+      "\nViernes 20:00 a 22:00",
+      "\nJuveniles:",
+      "\nMartes y Jueves 18:00 a 19:00",
+      "\nEscuelita:",
+      "\nMartes y Jueves 18:00 a 19:00",
+      "\nMayores Femenino:",
+      "\nLunes, Miércoles y Jueves 20:00 a 22:00 cancha Prado"
     ],
     "redes_sociales": {
       "facebook": "https://www.facebook.com/psgruby",
@@ -69,7 +74,7 @@
       "\nMasculino:",
       "\nMayores Martes y Jueves 19:30 a 22:00",
       "\nFormativas Miércoles 18:30 a 19:30",
-      "\nFemenino",
+      "\nFemenino:",
       "\nMayores Martes y Jueves 19:30 a 22:00 Miércoles de 19:30 a 21:00",
       "\nFormativas solo para alumnas del colegio",
       "\nIntermedias de 20:30 a 22:30"
